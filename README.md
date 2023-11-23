@@ -108,8 +108,8 @@ const route = createBrowserRouter([
 ]);
 ```
 
-- In case the react app uses forms to collect user data or to create new data automatically like generating a contactId for a new contact, instead of using the html [<form>] element, it would be wise to use a [<Form>] element provided by react-router-dom.
-  [<Form>] element by react router, performs client side routing, instead of sending data to server; i.e., if a method for the form is a POST, the Form element by react router serializes the data input automatically and revalidates the data into a request body for the route action.
+- In case the react app uses forms to collect user data or to create new data automatically like generating a contactId for a new contact, instead of using the html [form] element, it would be wise to use a [Form] element provided by react-router-dom.
+  [Form] element by react router, performs client side routing, instead of sending data to server; i.e., if a method for the form is a POST, the Form element by react router serializes the data input automatically and revalidates the data into a request body for the route action.
   If the methods on the Form is a GET, the form manipulates the URLSearchParams, and the params are accessible by a route loader.
 
 example...
@@ -172,7 +172,7 @@ export default function Contacts() {
 }
 ```
 
-- Link navigation, instead of using the [<a>] html tag which causes a full page reload, for client side routing, [<Link>] or [<NavLink>] from react-router are use, as they do not cause full page routing. NavLink tags are used when some styling needs to be added to the navigation, e.g. when a certain link is clicked and data is (pending) loading or when a certain link is active.
+- Link navigation, instead of using the [anchor] html tag which causes a full page reload, for client side routing, [Link] or [NavLink] from react-router are use, as they do not cause full page routing. NavLink tags are used when some styling needs to be added to the navigation, e.g. when a certain link is clicked and data is (pending) loading or when a certain link is active.
 
 - useLoaderData() method is used to get the data returned by the loader of the specific route that renders the component.
 
